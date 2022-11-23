@@ -122,6 +122,6 @@ void randnumbers(int & x, int & y, int & z) {
 }
 
 void guessnumbers(int & nb1, int & nb2, int & nb3) {
-    cout << "Guess the 3 numbers from 1-->6: ";
+    cout << "Guess the 3 numbers from 0-->9: ";
     cin >> nb1 >> nb2 >> nb3;
 }
