@@ -6,6 +6,8 @@ $Area = ( Height * Base )/2$
 ![image](https://user-images.githubusercontent.com/46810904/204225813-665f0ad8-2c45-48f1-9807-a8f54becf6b1.png)
 
 
+Round the answer to 2 digits.
+
 ### Sample 1
 `Input`
 ```
