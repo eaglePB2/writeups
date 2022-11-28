@@ -1,9 +1,10 @@
-#include<stdio.h>
+#include <stdio.h>
+#define PI 3.14
 
 int main()
 {
    int rad;
-   float PI = 3.14, area, ci;
+   float area, ci;
 
    printf("\nEnter radius of circle: ");
    scanf("%d", &rad);
