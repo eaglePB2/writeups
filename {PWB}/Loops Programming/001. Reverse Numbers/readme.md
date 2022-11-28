@@ -1,4 +1,4 @@
-Write a Program for Reversing a given number using **While Loop**. 
+Write a Program for Reversing a given number using **While Loop**, without using **arrays**. 
 
 ### Sample 1
 `Input`
