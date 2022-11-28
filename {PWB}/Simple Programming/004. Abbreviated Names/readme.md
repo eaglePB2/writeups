@@ -1,6 +1,6 @@
 Abbreviated is a short-form name, given example in Samples Sections.
 
-Write a C Program to Convert a person's name in Abbreviated.
+Write a Program to Convert a person's name in Abbreviated.
 
 ### Sample 1
 `Input`
