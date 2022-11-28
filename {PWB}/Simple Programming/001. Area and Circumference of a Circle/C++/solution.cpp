@@ -1,11 +1,12 @@
 #include <iostream>
 #include <iomanip>
 
+#define PI 3.14
+
 using namespace std;
 
 int main() {
-  int rad;
-  float PI = 3.14, area, ci;
+  float rad, area, ci;
   cout<<"Enter radius of circle: ";
   cin>>rad;
   area = PI * rad * rad;
