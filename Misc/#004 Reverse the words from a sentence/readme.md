@@ -1,5 +1,5 @@
 Reversing the sentence word by word is totally different than reverse the sentence char by char.  
-But anyways, I think you cna do it!
+But anyways, I think you can do it!
 
 `Input`
 ```
