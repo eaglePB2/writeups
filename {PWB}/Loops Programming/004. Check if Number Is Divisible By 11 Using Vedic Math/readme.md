@@ -1,4 +1,4 @@
-Divisible by 11 using `if (number / 11 == 0)` is too easy. Let's try solve it using Vedic math!
+Divisible by 11 using `if (number / 11 == 0)` is too easy. Let's try solving it using Vedic math!
 
 ### Info:
 Vedic Math is a method which is by calculating the sum of the odd place digits and even place digits.  
