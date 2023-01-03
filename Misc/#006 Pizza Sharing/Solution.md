@@ -1,4 +1,4 @@
-| ppl | pizza consumed (%) | pizza consumed in 100% | pizza left (%) |
+| Guests | pizza consumed (%) | pizza consumed in 100% | pizza left (%) |
 | --- | ------------------ | ---------------------- | -------------- |
 | 1   | 1                  | 1                      | 99             |
 | 2   | 2                  | 1.98                   | 97.02          |
