@@ -64,10 +64,6 @@
     * [Kensorship](abakoda/2023/round-2/kensorship.md)
     * [Duel Languages](abakoda/2023/round-2/duel-languages.md)
 
-## Project Euler
-
-* [Expand me for questions](project-euler/expand-me-for-questions.md)
-
 ## Meta Coding Competitions
 
 * [2011](meta-coding-competitions/2011/README.md)
