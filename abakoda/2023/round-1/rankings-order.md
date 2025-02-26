@@ -1,6 +1,6 @@
 ---
+icon: k
 description: https://codeforces.com/group/cRJbcAFEwS/contest/485694/problem/C
-icon: c
 cover: ../../../.gitbook/assets/image (15).png
 coverY: 0
 layout:
