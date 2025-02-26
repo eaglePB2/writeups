@@ -52,7 +52,12 @@
 
 ## ABaKoDa
 
-* [2023](abakoda/2023.md)
+* [2023](abakoda/2023/README.md)
+  * [Round 1](abakoda/2023/round-1/README.md)
+    * [Problem Letters](abakoda/2023/round-1/problem-letters.md)
+    * [Problem Statistics](abakoda/2023/round-1/problem-statistics.md)
+    * [Rankings Order](abakoda/2023/round-1/rankings-order.md)
+    * [Rankings Search](abakoda/2023/round-1/rankings-search.md)
 
 ## Project Euler
 

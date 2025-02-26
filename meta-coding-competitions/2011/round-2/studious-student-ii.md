@@ -1,6 +1,6 @@
 ---
+icon: user-graduate
 description: https://www.facebook.com/codingcompetitions/hacker-cup/2011/round-2/problems/C
-icon: book-arrow-up
 ---
 
 # Studious Student II
