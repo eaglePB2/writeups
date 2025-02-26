@@ -1,7 +1,7 @@
 ---
+icon: link
 description: >-
   https://www.hackerrank.com/contests/codenection-2023-final-round-closed-category/challenges/cn-c11/problem
-icon: link
 ---
 
 # Codey and Connection
@@ -63,7 +63,7 @@ NO
 
 In the first test case, it is possible to connect the letters, and spell out `CODENECTION`.
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 whereas for the second test case, it is not possible to connect in such a way that spells out `CODENECTION`.
 {% endtab %}

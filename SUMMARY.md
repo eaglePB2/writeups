@@ -58,6 +58,11 @@
     * [Problem Statistics](abakoda/2023/round-1/problem-statistics.md)
     * [Rankings Order](abakoda/2023/round-1/rankings-order.md)
     * [Rankings Search](abakoda/2023/round-1/rankings-search.md)
+  * [Round 2](abakoda/2023/round-2/README.md)
+    * [Abakoda Letters](abakoda/2023/round-2/abakoda-letters.md)
+    * [Borrowed Words](abakoda/2023/round-2/borrowed-words.md)
+    * [Kensorship](abakoda/2023/round-2/kensorship.md)
+    * [Duel Languages](abakoda/2023/round-2/duel-languages.md)
 
 ## Project Euler
 

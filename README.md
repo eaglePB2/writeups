@@ -14,7 +14,7 @@ layout:
 
 # Home Page
 
-Welcome, this is my archive of personal write offs that I had taken / practiced / or even some of the questions I come up myself in various competitions.
+Welcome, this is my archive of personal writeups that I had taken / practiced / or even some of the questions I come up myself from various contests.
 
 The solution there are mostly polished, which differ than my code during competitions.
 

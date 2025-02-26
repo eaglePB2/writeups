@@ -1,7 +1,7 @@
 ---
+icon: rectangle
 description: >-
   https://www.hackerrank.com/contests/codenection-2024-preliminary-round-open-category/challenges/cn24-9
-icon: rectangle
 ---
 
 # Codey and Rectangles
@@ -59,7 +59,7 @@ for area $$k=9$$, the only possible integer dimensions are:
 
 The first dimensions $$(1 * 9)$$ would extend beyond the paper dimensions $$(4 * 4)$$, so, it does not fit. Hence, it's optimal to have the rectangle drawn with side lengths $$3$$ and $$3$$. It can be shown that there's 4 ways to draw a $$(3 * 3)$$ rectangle in the paper:
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 {% endtabs %}
 

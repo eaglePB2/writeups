@@ -1,7 +1,7 @@
 ---
+icon: biohazard
 description: >-
   https://www.hackerrank.com/contests/codenection-2023-final-round-open-category/challenges/cn-c14
-icon: biohazard
 ---
 
 # Codey and Zombies
@@ -58,11 +58,11 @@ Output two integers, maximum and minimum amount of firepower Codey can use.
 
 The picture below shows the position of the bombs that can ensure the minimum amount of fire powder used $$(1 + 1) + (1 + 2) + (1 + 1) = 7$$.
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 And this is the maximum amount of fire power Codey can use to eliminate all the zombies which is $$24$$.
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 {% endtabs %}
 
