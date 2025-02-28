@@ -63,16 +63,51 @@ dcyihopjijliuiuy
 
 <details>
 
-<summary>Solution</summary>
+<summary>58/63 Test Cases Solved</summary>
 
+This is the one which I am working during the contest, and sadly it didn't pass all test cases. \
+This code uses a lambda anonymous key function, which first pad all the text into the longest word, and sort by the alphabetical order.
 
+```python
+def sort_words_by_length(sentence):
+    words = sentence.split()[1:]
+    max_len = max(len(word) for word in words)
+    padded_words = [(word.ljust(max_len, 'z'), word) for word in words]
+    sorted_words = sorted(padded_words)
+    return ''.join(word[1] for word in sorted_words)
+
+cases = int(input())
+for i in range(1, cases+1):
+	print("Case #%d: %s" % (i, sort_words_by_length(input())))
+```
+
+This may not work if the string has duplicated values.
 
 </details>
 
 <details>
 
-<summary>sCurrent jj</summary>
+<summary>Current Solution — Brute Force Permutation</summary>
 
-kk
+The current working solution is simple — brute force all the permutation of the combinations and take the minimum as the result.
+
+Personally, I am not a fan of using brute force to list out all possible combinations, but since it has only 63 test cases, I would take it.
+
+Here's the solution, if you want simple and crude solution:
+
+```python
+from itertools import permutations
+
+def sort_words_by_length(sentence):
+    words = sentence.split()[1:]
+    return min("".join(p) for p in permutations(words))
+
+cases = int(input())
+for i in range(1, cases+1):
+	print("Case #%d: %s" % (i, sort_words_by_length(input())))
+```
+
+Note that I imported a library called itertools, which it may or may not work in different contests. Luckily this contest accepts the library imports.\
+Another note: this took O(N!) time complexity.
 
 </details>
