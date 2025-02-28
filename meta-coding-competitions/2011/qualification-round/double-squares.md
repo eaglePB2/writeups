@@ -1,7 +1,7 @@
 ---
+icon: square-2
 description: >-
   https://www.facebook.com/codingcompetitions/hacker-cup/2011/qualification-round/problems/A
-icon: square-2
 ---
 
 # Double Squares
@@ -59,8 +59,40 @@ For each value of <kbd>X</kbd>, you should output the number of ways to write <k
 
 <details>
 
-<summary>Solution</summary>
+<summary>Solution — Loop Until Roots</summary>
 
+A nice way to warm up the brain, huh?
 
+Given $$x^2 +y^2=N$$, we can rewrite it as $$x^2 = N - y^2$$. So that we are able to iterate the $$x^2$$. This is also useful info for us when it comes to the limit of the iteration, which is the root of $$x$$. After that, we can try if we square root the $$y^2$$, transform it to int $$y$$, and it still same. If it does, we proved that the equation is valid thus add a counter in there.
+
+After the iteration of $$\sqrt(x)$$ finishes, output the result.
+
+Here's my solution:
+
+```python
+def count_ways(n):
+    count = 0
+    limit = int(n**0.5)
+    
+    for x in range(limit + 1):
+        y_square = n - x**2
+        y = int(y_square**0.5)
+        
+        if y * y == y_square and x <= y:
+            count += 1
+        
+    return count
+
+i = 0
+waste = int(input())
+try:
+	while True:
+		i += 1
+		print("Case #%d: %d" % (i, count_ways(int(input()))))
+except EOFError:
+	exit()
+```
+
+Note that I am a big fan of using try and except EOFError method to quickly deal for looping situation, which makes the first input line for me, indeed useless.
 
 </details>
