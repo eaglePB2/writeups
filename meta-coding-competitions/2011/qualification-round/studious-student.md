@@ -1,7 +1,7 @@
 ---
+icon: user-graduate
 description: >-
   https://www.facebook.com/codingcompetitions/hacker-cup/2011/qualification-round/problems/C
-icon: user-graduate
 ---
 
 # Studious Student
@@ -66,5 +66,13 @@ dcyihopjijliuiuy
 <summary>Solution</summary>
 
 
+
+</details>
+
+<details>
+
+<summary>sCurrent jj</summary>
+
+kk
 
 </details>
