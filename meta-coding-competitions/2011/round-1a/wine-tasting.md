@@ -1,7 +1,7 @@
 ---
+icon: wine-glass
 description: >-
   https://www.facebook.com/codingcompetitions/hacker-cup/2011/round-1a/problems/C
-icon: wine-glass
 ---
 
 # Wine Tasting
@@ -59,8 +59,48 @@ For each test case, output a line containing a single integer, the number of way
 
 <details>
 
-<summary>Solution</summary>
+<summary>Solution — Permutation, Combination, DP</summary>
 
+The question is simply asking you a formula, which consists of following:
 
+&#x20;$$\sum_{n=C}^{G}\frac{G!}{C!*((G-C)!)}$$, which G is total glass, and C is minimum glasses needed to correct.
+
+One note to know that it is impossible to have cases which is $$G-C=1$$, as it is impossible to have only 1 glass of wine in wrong position.
+
+To speed up the time complexity, Dynamic Programming can be used to break the problem into smaller repeated problems, and faster up implying the recursive part.
+
+Here is the final solution:
+
+```python
+from math import comb, factorial
+
+MOD = 1051962371
+
+def exact_derangement(n):
+    if n == 0: return 1
+    if n == 1: return 0
+    dp = [0] * (n + 1)
+    dp[0], dp[1] = 1, 0
+    for i in range(2, n + 1):
+        dp[i] = (i - 1) * (dp[i - 1] + dp[i - 2]) % MOD
+    return dp[n]
+
+def count_winning_ways(total_boxes, min_correct):
+    total_ways = 0
+    for correct in range(min_correct, total_boxes + 1):
+        incorrect = total_boxes - correct
+        ways = (comb(total_boxes, correct) * exact_derangement(incorrect)) % MOD
+        total_ways = (total_ways + ways) % MOD
+    return total_ways
+
+cases = int(input())
+for i in range(1, cases+1):
+	G, C = map(int, input().strip().split())
+	print("Case #%d: %s" % (i, count_winning_ways(G, C)))
+```
+
+Note that it is allowed to use math library to speed up things, no need to reinvent the wheels of manually writing the `comb()` function.
+
+The first 2 pre-defined is for avoiding calculating the $$G - C = 1$$ situation as it is impossible, and $$G - C = 0$$ has always only have 1 solution.
 
 </details>
