@@ -91,3 +91,8 @@
     * [Alien Game](meta-coding-competitions/2011/final-round/alien-game.md)
     * [Party Time](meta-coding-competitions/2011/final-round/party-time.md)
     * [Safest Place](meta-coding-competitions/2011/final-round/safest-place.md)
+
+## EaglePB2's Special <a href="#special" id="special"></a>
+
+* [Word Squares](special/word-squares.md)
+* [Hong Kong Identity card](special/hong-kong-identity-card.md)
