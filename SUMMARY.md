@@ -94,5 +94,6 @@
 
 ## EaglePB2's Special <a href="#special" id="special"></a>
 
-* [Word Squares](special/word-squares.md)
 * [Hong Kong Identity card](special/hong-kong-identity-card.md)
+* [Cycle Prefix Averages](special/cycle-prefix-averages.md)
+* [Word Squares](special/word-squares.md)
