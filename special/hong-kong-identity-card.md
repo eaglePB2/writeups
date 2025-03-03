@@ -61,7 +61,7 @@ C876300(0)
 #### Output
 
 ```
-alsfalse
+false
 ```
 {% endtab %}
 {% endtabs %}
