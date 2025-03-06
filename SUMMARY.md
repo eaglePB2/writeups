@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Home Page](README.md)
+* [Why Python?](why-python.md)
 * [Why 10^9 + 7?](why-10-9-+-7.md)
 * [General Formatting Title](general-formatting-title.md)
 

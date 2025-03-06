@@ -51,21 +51,3 @@ If you found that your solution is working, and passed all test cases, while the
 1. Fork the repository.
 2. Create a new branch for the contributions.
 3. Submit a pull request with explanation how the code works.
-
-
-
-
-
-
-
-
-
-
-
-
-
-Most of the solution is written in Python, since it is fastest to implement while being more and more popular in ML / DL phases.
-
-As be cautious: most of the solution breaks the production rule to gain maximum performance, or we can say, the worst possible method while suffice the time and space constraints. (Meanwhile I would try my best to write writeups while following the production rule, unless the contraints forces to break the rules.)
-
-Example: bird sightseeing given only 5 types of birds, I will use arr = \[0,0,0,0,0] and count frequency instead of creating an enumerator to capture all unique values and frequency, as the before is straightforward and faster to implement.
