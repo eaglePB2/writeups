@@ -1,28 +1,33 @@
 ---
-description: >-
-  https://www.hackerrank.com/contests/codenection-2023-preliminary-round-closed-category/challenges/cn-c1
 icon: arrows-repeat
+description: >-
+  https://www.hackerrank.com/contests/codenection-2021-open-category-preliminary/challenges/did-they-cheat
 ---
 
-# Codey and CodeNection
+# Did they cheat?
 
 ## Question
 
-Codey is joining CodeNection for the first time and it is loving it! Help Codey express itself by printing the string `I LOVE CODENECTION` `n` times.
+The students of Dr. Kyle have submitted a unique string that Dr. Kyle gave them for homework. He is checking the strings of student A and student B which are denoted as A and B. Dr. Kyle wants to find out if they copied each other's work. If the string A can be transformed into string B with rotations, it'll be obvious to Dr. Kyle that they have cheated.
 
 ### Input Format
 
-The first line contains an integer `n`, which represents the number of times Codey wants to express love for CodeNection.
+A\
+B
 
 ### Constraints
 
 $$
-0 \le |n| \le 10^5
+2 \le |A| \le 100
+$$
+
+$$
+|A| = |B|
 $$
 
 ### Output Format
 
-Output the string `I LOVE CODENECTION` followed by a new line for `n` times.
+Output `Yes` if they cheated, `No` if they did not.
 
 ### Sample Inputs:
 
@@ -31,19 +36,22 @@ Output the string `I LOVE CODENECTION` followed by a new line for `n` times.
 #### Input
 
 ```
-2
+kyoto
+tokyo
 ```
 
 #### Output
 
 ```
-I LOVE CODENECTION 
-I LOVE CODENECTION
+Yes
 ```
 
 #### Explanation
 
-When `n` is 2, the output is the string "I LOVE CODENECTION" printed 2 times, each separated by a new line
+The rotation is defined as follows:
+
+Before: $$A=A_1A_2...A_{|A|}$$ (example: abc)\
+After: $$A=A_{|A|}A_1A_2...A_{|A|-1}$$ (example: cab)
 {% endtab %}
 
 {% tab title="Input 1" %}
@@ -81,14 +89,18 @@ When `n` is 13, the output is the string "I LOVE CODENECTION" printed 13 times, 
 
 <details>
 
-<summary>Solution - Traditional Loop</summary>
+<summary>Solution - Trivial</summary>
 
-This is trivial, just loop `I LOVE CODENECTION` based on user inputs.
+This is trivial, all you need is to add text1 twice, with simple if the text2 is in text1.
 
 ```python
-t = int(input().strip())
-for i in range(t):
-    print("I LOVE CODENECTION")
+word1 = input()
+word2 = input()
+
+if word2 in (word1 + word1):
+    print("Yes")
+else:
+    print("No")
 ```
 
 </details>
