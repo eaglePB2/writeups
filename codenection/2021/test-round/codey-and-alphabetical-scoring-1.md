@@ -1,7 +1,7 @@
 ---
+icon: microphone-stand
 description: >-
   https://www.hackerrank.com/contests/codenection-2021-closed-category/challenges/concert
-icon: microphone-stand
 ---
 
 # Concert
@@ -21,8 +21,6 @@ Input consists of an integer N, the number of students and next N lines contain 
 $$
 1 \le N \le 2*10^5
 $$
-
-
 
 $$
 1 \le N_i \le 10^9
@@ -58,33 +56,8 @@ Output two lines. The first line is minimum moves, second line is the maximum mo
 
 <details>
 
-<summary>Solution — Greedy Algorithm</summary>
+<summary>Solution</summary>
 
-A typical "Activity Selection Problem", which is a trivial for using greedy algorithm. We can sort by end time first, pick first possible meeting, and try to compare if they start after the last selected meeting ends afterwards.
 
-Here's the solution:
-
-```python
-def max_meetings(meetings):
-    sorted_meetings = sorted(meetings, key=lambda x: x[1])
-    
-    count = 1
-    last_end = sorted_meetings[0][1]
-
-    for start, end in sorted_meetings[1:]:
-        if start >= last_end:
-            count += 1
-            last_end = end
-            
-    return count
-
-n = int(input())
-meetings = []
-for _ in range(n):
-    start, end = map(int, input().split())
-    meetings.append((start, end))
-
-print(max_meetings(meetings))
-```
 
 </details>

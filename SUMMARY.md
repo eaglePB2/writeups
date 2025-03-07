@@ -12,6 +12,8 @@
     * [Attend Talks](codenection/2021/test-round/codey-and-alphabetical-scoring.md)
     * [Distant Relatives](codenection/2021/test-round/codey-and-binary-guesser.md)
     * [Concert](codenection/2021/test-round/codey-and-alphabetical-scoring-1.md)
+    * [Mamak](codenection/2021/test-round/codey-and-alphabetical-scoring-2.md)
+    * [Fair Contest](codenection/2021/test-round/codey-and-alphabetical-scoring-3.md)
   * [Preliminary Round](codenection/2021/preliminary-round/README.md)
     * [Codey and CodeNection](codenection/2021/preliminary-round/codey-and-codenection.md)
     * [Codey and Hide-and-Seek](codenection/2021/preliminary-round/codey-and-hide-and-seek.md)
