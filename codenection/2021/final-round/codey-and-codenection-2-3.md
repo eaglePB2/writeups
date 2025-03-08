@@ -1,28 +1,27 @@
 ---
-icon: pizza-slice
 description: >-
-  https://www.hackerrank.com/contests/codenection-2021-open-category-finals/challenges/thank-you-pizza
+  https://www.hackerrank.com/contests/codenection-2021-open-category-finals/challenges/last-year-when-life-was-better
 ---
 
-# Thank You Pizza
+# 🥰 Last year when life was better
 
 ## Question
 
-Thank you everyone for joining. You all deserve a virtual pizza (because we're too broke to buy real pizzas). We want to make sure all of you get even numbers of pizza slices. We know that the number of participants at this final will be A or B. Help us determine the minimum number of pizza slices we need to order so that the slices can be evenly distributed to everyone in both cases.
+2019 was an amazing year. I loved 2019 so much that I want to find 2019 everywhere. So, I found a random string S that contains digits `1-9`. I want to find number of pairs of integers $$\{i,j\ |\ 1\le i \le j \le|S|\}$$  where characters between ith and jth positions form an integer which is a multiple of 2019.
 
 ### Input Format
 
-A, B
+S
 
 ### Constraints
 
 $$
-0 \le A, B \le 10^{5}
+1 \le |S| \le 2*10^5
 $$
 
 ### Output Format
 
-A single integer, the number of slices we need to order.
+Print the answer.
 
 ### Sample Inputs:
 
@@ -31,18 +30,21 @@ A single integer, the number of slices we need to order.
 #### Input
 
 ```
-2 3
+1817181712114
 ```
 
 #### Output
 
 ```
-6
+3
 ```
 
 #### Explanation
 
-When we have six slices, each of you can take three pieces if we have two participants, and each participant can take two if we have three participants.
+Three pairs - (1,5), (5,9), and (9,13) - form such integers:
+
+* 18171 = 2019 \* 9
+* 12114 = 2019 \* 6
 {% endtab %}
 {% endtabs %}
 
@@ -50,23 +52,36 @@ When we have six slices, each of you can take three pieces if we have two partic
 
 <details>
 
-<summary>Solution - LCM</summary>
+<summary>Solution - Modular</summary>
 
-By appling the LCM to both inputs, we can guaranteed to get the number of slices which can suffice both of the situation.
+A modular solution traversing reversed string is able to solve the problem. We first stores the frequency of prefix mod values (3 \* 673), then we try to loop through the length of the string, getting their modular values.
 
-And the solution is here:
+If we got same mod value, then we prove that there's a substring which is the multiple of 2019.
 
-```python
-import math
-print(math.lcm(*map(int, input().split())))
-```
-
-Note that "\*" means unpack. If math.lcm is not supported, here's alternative solution:
+After traversed all strings, output the counter.
 
 ```python
-import math
-a, b = map(int, input().split())
-print(abs(a*b) // math.gcd(a, b))
+from collections import defaultdict
+
+def count_divisible_by_2019(s):
+    mod = 2019
+    count = 0
+    mod_count = defaultdict(int)  # Stores frequency of prefix mod values
+    mod_count[0] = 1  # To handle cases where prefix itself is divisible
+
+    prefix = 0
+    power = 1  # To handle positional values correctly (like 10^0, 10^1, ...)
+
+    # Traverse the string from right to left (ensuring digit order remains)
+    for digit in reversed(s):
+        prefix = (prefix + int(digit) * power) % mod
+        count += mod_count[prefix]  # If the same mod value was seen before, we found substrings
+        mod_count[prefix] += 1
+        power = (power * 10) % mod  # Maintain correct positional contribution
+
+    return count
+
+print(count_divisible_by_2019(input()))
 ```
 
 </details>

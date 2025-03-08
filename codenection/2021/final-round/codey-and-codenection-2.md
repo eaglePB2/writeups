@@ -1,7 +1,7 @@
 ---
+icon: pipe
 description: >-
   https://www.hackerrank.com/contests/codenection-2021-open-category-finals/challenges/ways-1-1
-icon: pipe
 ---
 
 # Ways 1
@@ -22,7 +22,7 @@ $$
 
 ### Output Format
 
-A single interger, the number of ways to divide the wire.
+A single integer, the number of ways to divide the wire.
 
 ### Sample Inputs:
 

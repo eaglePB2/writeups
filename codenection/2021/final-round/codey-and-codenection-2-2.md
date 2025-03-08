@@ -1,13 +1,14 @@
 ---
 description: >-
-  https://www.hackerrank.com/contests/codenection-2021-open-category-finals/challenges/last-year-when-life-was-better
+  https://www.hackerrank.com/contests/codenection-2021-open-category-finals/challenges/a-joke
+icon: question
 ---
 
-# 🥰 Last year when life was better
+# A joke
 
 ## Question
 
-2019 was an amazing year. I loved 2019 so much that I want to find 2019 everywhere. So, I found a random string S that contains digits `1-9`. I want to find number of pairs of integers $$\{i,j\ |\ 1\le i \le j \le|S|\}$$  where characters between ith and jth positions form an integer which is a multiple of 2019.
+Dr. Kyle is taking a test, and he thought there should definitely be an easy problem that everyone can solve. Here's the problem: Given a string S of length 6 print `Yes` or print `No`. To find out when to print what, students need to observe the test cases.
 
 ### Input Format
 
@@ -16,7 +17,7 @@ S
 ### Constraints
 
 $$
-1 \le |S| \le 2*10^5
+|S| == 6
 $$
 
 ### Output Format
@@ -30,21 +31,42 @@ Print the answer.
 #### Input
 
 ```
-1817181712114
+lmaaoo
 ```
 
 #### Output
 
 ```
-3
+Yes
+```
+{% endtab %}
+
+{% tab title="Input 1" %}
+#### Input
+
+```
+iphone
 ```
 
-#### Explanation
+#### Output
 
-Three pairs - (1,5), (5,9), and (9,13) - form such integers:
+```
+No
+```
+{% endtab %}
 
-* 18171 = 2019 \* 9
-* 12114 = 2019 \* 6
+{% tab title="Input 2" %}
+#### Input
+
+```
+mommaa
+```
+
+#### Output
+
+```
+Yes
+```
 {% endtab %}
 {% endtabs %}
 
@@ -52,36 +74,20 @@ Three pairs - (1,5), (5,9), and (9,13) - form such integers:
 
 <details>
 
-<summary>Solution - Modular</summary>
+<summary>Solution - Observation</summary>
 
-A modular solution traversing reversed string is able to solve the problem. We first stores the frequency of prefix mod values (3 \* 673), then we try to loop through the length of the string, getting their modular values.
+From all test cases, we can confirm that:
 
-If we got same mod value, then we prove that there's a substring which is the multiple of 2019.
+if the 3rd char == 4th char, and 5th char == 6th char, print Yes. Otherwise, print No.
 
-After traversed all strings, output the counter.
+Let's build the answer instantly to get free marks:
 
 ```python
-from collections import defaultdict
-
-def count_divisible_by_2019(s):
-    mod = 2019
-    count = 0
-    mod_count = defaultdict(int)  # Stores frequency of prefix mod values
-    mod_count[0] = 1  # To handle cases where prefix itself is divisible
-
-    prefix = 0
-    power = 1  # To handle positional values correctly (like 10^0, 10^1, ...)
-
-    # Traverse the string from right to left (ensuring digit order remains)
-    for digit in reversed(s):
-        prefix = (prefix + int(digit) * power) % mod
-        count += mod_count[prefix]  # If the same mod value was seen before, we found substrings
-        mod_count[prefix] += 1
-        power = (power * 10) % mod  # Maintain correct positional contribution
-
-    return count
-
-print(count_divisible_by_2019(input()))
+s = input()
+if s[2] == s[3] and s[4] == s[5]:
+    print("Yes")
+else:
+    print("No")
 ```
 
 </details>
