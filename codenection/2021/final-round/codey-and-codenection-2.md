@@ -1,28 +1,28 @@
 ---
 description: >-
-  https://www.hackerrank.com/contests/codenection-2023-final-round-closed-category/challenges/cn-c10
-icon: backward
+  https://www.hackerrank.com/contests/codenection-2021-open-category-finals/challenges/ways-1-1
+icon: pipe
 ---
 
-# Codey and CodeNection 2
+# Ways 1
 
 ## Question
 
-Codey worked really hard and its perseverance has landed it in the CodeNection Finals! Codey wishes to express its love for CodeNection, but this time, it wants you to put a clever twist. Reverse the phrase `I LOVE CODENECTION` `n` times, and print the **final string**.
+There is a wire of integer length lying flat. We will cut this wire at 11 integer positions to divide it into 12 smaller wires. Here, each of the 12 resulting wires must have a positive integer length. Find the number of ways to do this division. It can be proved that the answer is less than $$2^{63}$$.
 
 ### Input Format
 
-The first line contains an integer `n`, which represents the number of times Codey wants to reverse the string `I LOVE CODENECTION`.
+L
 
 ### Constraints
 
 $$
-0 \le |n| \le 10^{18}
+12 \le L \le 200
 $$
 
 ### Output Format
 
-Output the string `I LOVE CODENECTION` reversed `n` times.
+A single interger, the number of ways to divide the wire.
 
 ### Sample Inputs:
 
@@ -31,20 +31,28 @@ Output the string `I LOVE CODENECTION` reversed `n` times.
 #### Input
 
 ```
-3
+12
 ```
 
 #### Output
 
 ```
-NOITCENEDOC EVOL I
+1
+```
+{% endtab %}
+
+{% tab title="Input 1" %}
+#### Input
+
+```
+13
 ```
 
-#### Explanation
+#### Output
 
-`I LOVE CODENECTION` is reversed 3 times.
-
-`NOITCENEDOC EVOL I` -> `I LOVE CODENECTION` -> `NOITCENEDOC EVOL I`
+```
+12
+```
 {% endtab %}
 {% endtabs %}
 
@@ -52,27 +60,15 @@ NOITCENEDOC EVOL I
 
 <details>
 
-<summary>Solution - Binary Modular</summary>
+<summary>Solution - Stars and Bars Problem</summary>
 
-Given that number 1, 3, 5, ... gives `NOITCENEDOC EVOL I`.
+A typical stars and bars problem. A simple combinatorial calculation $$\binom{n-1}{11}$$ is enough to suffice the conditions.
 
-Given that number 2, 4, 6, ... gives `I LOVE CODENECTION`.
-
-so, by using % 2, the answer will be either 0 or 1.
-
-for the case number is 1, that means `I LOVE CODENECTION` will be reversed; otherwise, keep the same value.
-
-Therefore, the solution is:
+Here's the solution:
 
 ```python
-string = "I LOVE CODENECTION"
-
-t = int(input())
-
-if t % 2 == 1:
-    print(string[::-1])
-else:
-    print(string)
+from math import comb
+print(comb(int(input())-1, 11))
 ```
 
 </details>

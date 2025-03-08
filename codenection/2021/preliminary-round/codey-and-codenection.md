@@ -53,36 +53,6 @@ The rotation is defined as follows:
 Before: $$A=A_1A_2...A_{|A|}$$ (example: abc)\
 After: $$A=A_{|A|}A_1A_2...A_{|A|-1}$$ (example: cab)
 {% endtab %}
-
-{% tab title="Input 1" %}
-#### Input
-
-```
-13
-```
-
-#### Output
-
-```
-I LOVE CODENECTION
-I LOVE CODENECTION
-I LOVE CODENECTION
-I LOVE CODENECTION
-I LOVE CODENECTION
-I LOVE CODENECTION
-I LOVE CODENECTION
-I LOVE CODENECTION
-I LOVE CODENECTION
-I LOVE CODENECTION
-I LOVE CODENECTION
-I LOVE CODENECTION
-I LOVE CODENECTION
-```
-
-#### Explanation
-
-When `n` is 13, the output is the string "I LOVE CODENECTION" printed 13 times, each separated by a new line
-{% endtab %}
 {% endtabs %}
 
 ***
