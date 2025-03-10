@@ -66,6 +66,7 @@
     * [Codey and Symbol](codenection/2024/final-round/codey-and-symbol.md)
     * [Codey and Rectangles 2](codenection/2024/final-round/codey-and-rectangles-2.md)
     * [Codey and Jutsu](codenection/2024/final-round/codey-and-rectangles-2-1.md)
+    * [Codey and Toy Kingdom 2](codenection/2024/final-round/codey-and-rectangles-2-2.md)
 
 ## ABaKoDa
 
