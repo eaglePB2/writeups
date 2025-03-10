@@ -1,5 +1,5 @@
 ---
-icon: symbols
+icon: rectangle-vertical
 description: >-
   https://www.hackerrank.com/contests/codenection-2024-final-round-closed-category/challenges/cn24-19
 ---
