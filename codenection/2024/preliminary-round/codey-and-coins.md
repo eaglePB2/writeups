@@ -1,7 +1,7 @@
 ---
+icon: coin
 description: >-
   https://www.hackerrank.com/contests/codenection-2024-preliminary-round-closed-category/challenges/cn24-3
-icon: coin
 ---
 
 # Codey and Coins
@@ -100,6 +100,7 @@ Therefore, I made Codey to move positive array first, just in case if the negati
 
 Here's my code in advance:
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 t = int(input().strip())
 neg_arr = []
@@ -133,8 +134,8 @@ for i in range(max(len(pos_arr), len(neg_arr))):
         break
 
 print(total)
-
 ```
+{% endcode %}
 
 Note that I used try, except and break method so I don't have to explicitly care if both of the length of array is same, which potentially running out of index.
 

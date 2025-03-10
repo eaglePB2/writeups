@@ -1,7 +1,7 @@
 ---
+icon: sigma
 description: >-
   https://www.hackerrank.com/contests/codenection-2023-preliminary-round-closed-category/challenges/cn-c3
-icon: sigma
 ---
 
 # Codey and Math
@@ -86,6 +86,7 @@ For any numbers besides 0, the sum ranges from -n + 1 to n will always get n as 
 
 All we need to do is, test if the input is 0, then give it a special answer (0 0). For other values, they are all (-t + 1, t). Therefore, the solution is:
 
+{% code lineNumbers="true" %}
 ```python
 t = int(input())
 if t == 0:
@@ -93,5 +94,6 @@ if t == 0:
 else:
     print(-t + 1, t)
 ```
+{% endcode %}
 
 </details>

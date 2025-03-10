@@ -1,7 +1,7 @@
 ---
+icon: ghost
 description: >-
   https://www.hackerrank.com/contests/codenection-2023-preliminary-round-closed-category/challenges/cn-c2
-icon: ghost
 ---
 
 # Codey and Hide-and-Seek
@@ -91,6 +91,7 @@ lastly, if it finds it, return the coordinates; otherwise, returns -1.
 
 Here's the solution:
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 m, n = map(int, input().strip().split())
 grid = [list(input().strip()) for _ in range(m)]
@@ -102,6 +103,7 @@ for i, row in enumerate(grid):
             exit()
 print(-1)
 ```
+{% endcode %}
 
 Note that I used enumerate function. This could be useful if you want to extract the index and values in array at the same time.
 

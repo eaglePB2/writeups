@@ -1,7 +1,7 @@
 ---
+icon: apple-whole
 description: >-
   https://www.hackerrank.com/contests/codenection-2023-final-round-open-category/challenges/cn-c23
-icon: apple-whole
 ---
 
 # Codey and Apples
@@ -90,10 +90,10 @@ Codey can choose the first `4` bags and get $$1+1+1+1 = 4$$ apples. Codey can th
 
 <summary>Current - 16/18 test cases</summary>
 
-**This solution is still not 100%, it still got 2 test cases wrong**
-
+**This solution is still not 100%, it still got 2 test cases wrong**\
 Haven't figure it out why that particular 2 test case is wrong. But here's my current progress:
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def distribute_apples(n, m, apples):
     indexed_apples = [(apples[i], i) for i in range(n)]
@@ -122,8 +122,8 @@ result, used_bags = distribute_apples(n, m, apples)
 print(result)
 if used_bags is not None:
     print(" ".join(map(str, [bag + 1 for bag in used_bags]))) 
-
 ```
+{% endcode %}
 
 </details>
 
@@ -139,6 +139,7 @@ if the subsets remainder hits 0, then that is the solution. Otherwise, if all su
 
 Here's my friend's solution:
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def distribute_apples(n, m, apples):
     mod_map = {0: -1}
@@ -168,5 +169,6 @@ print(result)
 if used_bags is not None:
     print(" ".join(map(str, [bag + 1 for bag in used_bags]))) 
 ```
+{% endcode %}
 
 </details>

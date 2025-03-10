@@ -1,7 +1,7 @@
 ---
+icon: font-case
 description: >-
   https://www.hackerrank.com/contests/codenection-2023-test/challenges/challenge-1-250
-icon: font-case
 ---
 
 # Codey and Alphabetical Scoring
@@ -65,6 +65,7 @@ Then, receive the input, break them into char arrays, lookup for numbers, add on
 
 Here's the solution:
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 alphabet = {
     "A": 1, 
@@ -98,6 +99,7 @@ alphabet = {
 user_input = input().strip().upper()
 print(sum(alphabet[char] for char in input_string if char in alphabet))
 ```
+{% endcode %}
 
 Realisticly, the actual competition won't be that easy to compress the code into 1 line. It's ok if you prefer traditional, easier to understand method to write the code. If test case passes, then no issue about that.
 
@@ -113,6 +115,7 @@ Given A is 65, all you need to do is convert the words into chars, convert them 
 
 Here's the full code:
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 letter_values = {chr(i): i - 64 for i in range(65, 91)}
 
@@ -122,6 +125,7 @@ def calculate_total_value(input_string):
 user_input = input().strip().upper()
 print(calculate_total_value(user_input))
 ```
+{% endcode %}
 
 Personally, I don't recommend this method as this one easily caught AI detection. In competitive programming which you can't get any help with, this code itself is too optimized that almost nobody would believe it was done without referring information.
 

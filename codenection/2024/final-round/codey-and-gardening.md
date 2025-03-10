@@ -1,7 +1,7 @@
 ---
+icon: tomato
 description: >-
   https://www.hackerrank.com/contests/codenection-2024-final-round-closed-category/challenges/cn24-10
-icon: tomato
 ---
 
 # Codey and Gardening
@@ -101,6 +101,7 @@ Otherwise, my personal favorite approach is by using dictionary method, store an
 
 Here's the final code: (Yes, it's ugly please forgive me)
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 n = int(input().strip())
 scores = {}
@@ -128,6 +129,7 @@ codey_rank = standard_ranking.get("codey")
 
 print(codey_rank)
 ```
+{% endcode %}
 
 Fun fact: This solution is not made during competition; it's after made with all test cases passed after the competition is finished.
 

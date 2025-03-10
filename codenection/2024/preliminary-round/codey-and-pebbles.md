@@ -1,7 +1,7 @@
 ---
+icon: pompebled
 description: >-
   https://www.hackerrank.com/contests/codenection-2024-preliminary-round-closed-category/challenges/cn24-5
-icon: pompebled
 ---
 
 # Codey and Pebbles
@@ -63,6 +63,7 @@ After that, check if it's only "1" or "0" in an array. Then, locate that odd one
 
 Here's my solution:
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 t = int(input().strip())
 n = list(map(int, input().strip().split()))
@@ -77,6 +78,7 @@ for idx, val in enumerate(check_binary):
     if val == unique_check:
         print(idx + 1)
 ```
+{% endcode %}
 
 Note that I used the count() feature to count the number of 1s, if the count returns 1, which means the binary "1" is the only cell; otherwise, it's "0".
 

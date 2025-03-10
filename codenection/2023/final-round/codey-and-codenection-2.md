@@ -1,7 +1,7 @@
 ---
+icon: backward
 description: >-
   https://www.hackerrank.com/contests/codenection-2023-final-round-closed-category/challenges/cn-c10
-icon: backward
 ---
 
 # Codey and CodeNection 2
@@ -64,6 +64,7 @@ for the case number is 1, that means `I LOVE CODENECTION` will be reversed; othe
 
 Therefore, the solution is:
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 string = "I LOVE CODENECTION"
 
@@ -74,5 +75,6 @@ if t % 2 == 1:
 else:
     print(string)
 ```
+{% endcode %}
 
 </details>

@@ -1,7 +1,7 @@
 ---
+icon: binary
 description: >-
   https://www.hackerrank.com/contests/codenection-2023-test/challenges/guesser/problem
-icon: binary
 ---
 
 # Codey and Binary Guesser
@@ -32,12 +32,14 @@ There's no inputs.
 
 <summary>Solution - ???</summary>
 
-This one is a fun question. More like a san check based question.
+This one is a fun question. More like a sanity check based question.
 
 All you need to do is just print `0 or 1`. That's it.
 
+{% code lineNumbers="true" %}
 ```python
 print("0 or 1")
 ```
+{% endcode %}
 
 </details>

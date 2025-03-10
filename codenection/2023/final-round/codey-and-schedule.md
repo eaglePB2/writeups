@@ -1,7 +1,7 @@
 ---
+icon: calendar-circle-user
 description: >-
   https://www.hackerrank.com/contests/codenection-2023-final-round-closed-category/challenges/cn-c12
-icon: calendar-circle-user
 ---
 
 # Codey and Schedule
@@ -77,8 +77,9 @@ Ignore all the descriptions, as they only to make you confuse about that.
 
 Basically, all the question wants is, loop through array\[n] vs array\[n+1], then each team will guarantee that must have fought 2 different teams.
 
-How it works? I draw the illustrate, and you will understand:
+How it works? I draw the illustration, and you will understand:
 
+{% code overflow="wrap" %}
 ```
 Assume we have 2 identical arrays:
 1 2 3 4 5
@@ -95,11 +96,13 @@ take team 3 as example, he will be facing 4 and 5
 And you will be find that, the amount of tries is exactly as same as the total team number.
 This exactly solved the whole problem!
 ```
+{% endcode %}
 
 The only edge case we need to consider is explicitly print array\[0] vs array\[n] as array is not a cycle. That's it.
 
 Now we found the procedure, now let's get into coding!
 
+{% code lineNumbers="true" %}
 ```python
 t = int(input().strip())
 print(t)
@@ -110,5 +113,6 @@ for i in range(1, t+1):
     else:
         print(i, i+1)
 ```
+{% endcode %}
 
 </details>

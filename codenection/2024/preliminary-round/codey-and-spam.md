@@ -1,7 +1,7 @@
 ---
+icon: text-size
 description: >-
   https://www.hackerrank.com/contests/codenection-2024-preliminary-round-closed-category/challenges/cn24-3
-icon: text-size
 ---
 
 # Codey and Spam
@@ -75,6 +75,7 @@ Otherwise, subtract the n with x, and do it reversely.
 
 Here's my solution:
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 n, m = map(int, input().strip().split())
 
@@ -98,6 +99,7 @@ if total_spam < m:
 
 print(lines)
 ```
+{% endcode %}
 
 The time complexity should be O(n).
 

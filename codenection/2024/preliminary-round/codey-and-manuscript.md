@@ -1,7 +1,7 @@
 ---
+icon: memo
 description: >-
   https://www.hackerrank.com/contests/codenection-2024-preliminary-round-open-category/challenges/cn24-7/problem
-icon: memo
 ---
 
 # Codey and Manuscript
@@ -84,8 +84,7 @@ In the third test case, one of the missing character `*` can be replaced with `o
 
 <summary>Solution - 2 pointers</summary>
 
-This one is actually simple if you know 2 pointers technique.
-
+This one is actually simple if you know 2 pointers technique.\
 If someone doesn't know, here how it goes:
 
 1. Prepare 2 arrays, which is for u and v.
@@ -101,6 +100,7 @@ If someone doesn't know, here how it goes:
 
 That's all for theory, time to coding!
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def compare_words(word1, word2):
     p1, p2 = 0, 0
@@ -118,5 +118,6 @@ for a0 in range(t):
     n = input().strip()
     print(compare_words(m, n))
 ```
+{% endcode %}
 
 </details>

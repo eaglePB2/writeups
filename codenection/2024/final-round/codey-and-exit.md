@@ -1,7 +1,7 @@
 ---
+icon: person-running
 description: >-
   https://www.hackerrank.com/contests/codenection-2024-final-round-closed-category/challenges/cn24-2/problem
-icon: person-running
 ---
 
 # Codey and Exit
@@ -78,11 +78,13 @@ One thing had to reminder; don't forget to add absolute symbols (In python, it i
 
 Here's my solution:
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 x1, y1 = map(int, input().strip().split())
 x2, y2 = map(int, input().strip().split())
 
 print((abs(x2-x1) + abs(y2-y1)))
 ```
+{% endcode %}
 
 </details>

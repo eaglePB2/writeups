@@ -1,7 +1,7 @@
 ---
+icon: arrows-repeat
 description: >-
   https://www.hackerrank.com/contests/codenection-2023-preliminary-round-closed-category/challenges/cn-c1
-icon: arrows-repeat
 ---
 
 # Codey and CodeNection
@@ -85,10 +85,11 @@ When `n` is 13, the output is the string "I LOVE CODENECTION" printed 13 times, 
 
 This is trivial, just loop `I LOVE CODENECTION` based on user inputs.
 
+{% code lineNumbers="true" %}
 ```python
-t = int(input().strip())
-for i in range(t):
+for i in range(int(input())):
     print("I LOVE CODENECTION")
 ```
+{% endcode %}
 
 </details>

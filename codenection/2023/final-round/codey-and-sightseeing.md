@@ -1,7 +1,7 @@
 ---
+icon: city
 description: >-
   https://www.hackerrank.com/contests/codenection-2023-final-round-open-category/challenges/cn-c15/
-icon: city
 ---
 
 # Codey and Sightseeing
@@ -94,6 +94,7 @@ If you know Dijkstra Algorithm, this should be easy, otherwise, don't waste your
 
 Here's the solution:
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 import heapq
 
@@ -141,6 +142,7 @@ for _ in range(m):
 
 print(sum_of_distances(n, m, k, places_of_interest, roads))
 ```
+{% endcode %}
 
 Note that I used `heapq` library to create heap structure. If you are going for data structure based questions (paths, trees, etc), this would be your most important library to go.
 

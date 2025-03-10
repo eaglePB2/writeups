@@ -1,48 +1,45 @@
 ---
+icon: symbols
 description: >-
   https://www.hackerrank.com/contests/codenection-2024-final-round-closed-category/challenges/cn24-19
-icon: symbols
 ---
 
 # Codey and Rectangles 2
 
 ## Question
 
-Codey was working on an equation but accidentally spilled water on its notes, blurring one of the symbols. Now, it can’t tell the correct relationship between the two sides of its equation.
+Codey is playing with rectangles again, but this time it's even more fun! Codey decorates the floor with n rectangular sheets of paper. Each side of the sheets is parallel to the x-axis or y-axis.
 
-The equation is given as:
+Each sheet's position on the floor is defined by four integers:
 
+* $$a_i$$ and $$b_i$$: The x-coordinates of the left and right edges of the sheet.
+* $$c_i$$ and $$d_i$$: The y-coordinates of the bottom and top edges of the sheet.
 
-
-$$
-a - (\frac{b}{c}) ? (\frac{d}{e}) - f
-$$
-
-Help Codey find the relationship `?`.&#x20;
-
-Print `>` if the left side is bigger, `<` if the right side is bigger, otherwise `=`.
+Help Codey calculate the **total area covered by the rectangular sheets of paper** on the floor.
 
 ### Input Format
 
-The first line contains 6 values, $$a,b,c,d,e,f$$.
+The first line contains an integer n, where n represents the number of rectangular sheet of paper Codey has.
+
+The following n lines contain four integers $$a_i,b_i,c_i$$ and $$d_i$$, where and represent the left and right edges of the sheet on the x-axis, while $$c_i$$ and $$d_i$$ represent the bottom and top edges of the sheet on the y-axis.
 
 ### Constraints
 
 $$
-0 \le a, b, c, d, e, f \le 10^5
+2 \le n \le 100
 $$
 
 $$
-c, e \ne 0
+0 \le a_i \le b_i \le 100
+$$
+
+$$
+0 \le c_i \le d_i \le 100
 $$
 
 ### Output Format
 
-Print a single character:
-
-* $$>$$, if left side is larger.
-* $$<$$, if left side is smaller.
-* $$=$$, if both sides are equal.
+Output an integer, the total area covered by the sheets of paper.
 
 ### Sample Inputs:
 
@@ -51,22 +48,22 @@ Print a single character:
 #### Input
 
 ```
-5 6 2 8 4 1
+2
+1 3 0 2
+0 2 1 3
 ```
 
 #### Output
 
 ```
->
+7
 ```
 
 #### Explanation
 
-Left Side: $$5 - (\frac{6}{2}) = 2$$
+The first rectangle spans from $$(1,0)$$ to $$(3,2)$$, covering an area of 4 square units. The second rectangle spans from $$(0,1)$$ to $$(2, 3)$$, covering an area of 4 square units.
 
-Right Side: $$(\frac{8}{4}) - 1 = 1$$
-
-$$2>1$$, therefore output `>`.
+Since there is an overlap of $$1$$ square unit, the total area covered by both sheets is $$4 + 4 - 1 = 7$$ square units.
 {% endtab %}
 {% endtabs %}
 
@@ -78,38 +75,25 @@ $$2>1$$, therefore output `>`.
 
 This question is even easier than preliminary round, [Codey and Rectangles](../preliminary-round/codey-and-rectangles.md).
 
-Basically we can solve it using simple formulas.
+1. Create a 100 \* 100 array (yes, it is not that large)
+2. Parse through the range and fill all the coordinate ranges to 1 (double for loop).
+3. Count the total number which is 1. Problem solved.
 
-Step 1: Find the area of both rectangles.
+Here's the code:
 
-Given Rectangle A = $$(x_1, y_1)$$ to $$(x_2, y_2)$$, Rectangle B = $$(x_3, y_3)$$ to $$(x_4, y_4)$$.
-
-The sum of the area of both rectangles are:
-
-$$|[x_2-x_1]*[y_2-y_1]| + |[x_4-x_3] * [y_4-y_3]|$$
-
-Step 2: Find the **Overlap** area of both rectangles.
-
-The overlap length/width can be solved using this formula:
-
-length: $$max(0, min(x_2,x_4)-min(x_1,x_3))$$
-
-width: $$max(0, min(y_2,y_4) - min(y_1,y_3))$$
-
-Lastly, multiply them to get the overlap area of both rectangles.
-
-Step 3: Add them up!
-
-It's simple, just area of both rectangles - overlap area of both rectangles. Finally, you have solved this problem!
-
-Step 4: Generalize the formula into 2\~100 rectangles
-
-
-
-Here's my code:
-
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
-// Some code
+array = [[0 for _ in range(100)] for _ in range(100)]
+
+n = int(input().strip())
+for _ in range(n):
+    x1, x2, y1, y2 = map(int, input().split())
+    for i in range(x1, x2):
+        for j in range(y1, y2):
+            array[i][j] = 1
+
+print(sum(row.count(1) for row in array))
 ```
+{% endcode %}
 
 </details>

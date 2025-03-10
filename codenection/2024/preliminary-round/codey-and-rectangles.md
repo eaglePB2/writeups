@@ -100,6 +100,7 @@ Keep continuing and add the results to the answer, after whole iteration is fini
 
 Here's the full code:
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 x, y, k = map(int, input().strip().split())
 j = 0
@@ -113,6 +114,7 @@ for i in range(1, x+1):
 
 print(total)
 ```
+{% endcode %}
 
 Fun fact:
 

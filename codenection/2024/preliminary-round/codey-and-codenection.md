@@ -1,7 +1,7 @@
 ---
+icon: square-code
 description: >-
   https://www.hackerrank.com/contests/codenection-2024-preliminary-round-closed-category/challenges/cn24-1
-icon: square-code
 ---
 
 # Codey and CodeNection
@@ -63,6 +63,7 @@ Otherwise, receive the input, slice CODENECTION into an array with chars, loop i
 
 Here's the solution:
 
+{% code overflow="wrap" lineNumbers="true" fullWidth="false" %}
 ```python
 t = int(input())
 string = "CODENECTION"
@@ -70,5 +71,6 @@ string = "CODENECTION"
 for i in range(1, t+1):
     print(string[:i].rjust(t))
 ```
+{% endcode %}
 
 </details>

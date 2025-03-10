@@ -1,7 +1,7 @@
 ---
+icon: square-list
 description: >-
   https://www.hackerrank.com/contests/codenection-2024-preliminary-round-open-category/challenges/cn24-8
-icon: square-list
 ---
 
 # Codey and Recipes
@@ -85,6 +85,7 @@ All we need to do is grab the m elements from n array, then compare using set if
 
 Here's the solution:
 
+{% code title="wrong_solution.py" overflow="wrap" lineNumbers="true" %}
 ```python
 from collections import Counter
 
@@ -103,6 +104,7 @@ for i in range(m - n + 1):
         count += 1
 print(count)
 ```
+{% endcode %}
 
 But hold on a second, you may ask that this solution took too much time and get TLE.
 
@@ -119,6 +121,7 @@ You may wonder, how? Actually, it's simple.
 
 This is my code during the contest (yes, it is very ugly)
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 from collections import Counter
 
@@ -166,7 +169,7 @@ array1 = list(map(int, input().strip().split()))
 array2 = list(map(int, input().strip().split()))
 
 print(count_matches(m, n, k, array1, array2))
-
 ```
+{% endcode %}
 
 </details>

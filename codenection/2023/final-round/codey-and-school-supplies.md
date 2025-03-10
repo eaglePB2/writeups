@@ -1,7 +1,7 @@
 ---
+icon: school
 description: >-
   https://www.hackerrank.com/contests/codenection-2023-final-round-closed-category/challenges/cn-c13
-icon: school
 ---
 
 # Codey and School Supplies
@@ -93,6 +93,7 @@ Sounds similar to Dijkstra algorithm in brute force mode.
 
 Here's the code for full details.
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 min_cost = {
     "A": float("inf"),
@@ -141,6 +142,7 @@ if result == float("inf"):
 else:
     print(result)
 ```
+{% endcode %}
 
 Note that depends on the time left during the competition, Solution 2 may be more viable for you.
 
@@ -169,6 +171,7 @@ Lastly, find the shortest cost based on DP numbers, by comparing the minimum bet
 
 Here's the code in advance:
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def min_cost_to_get_keys(t, offers):
     dp = [float("inf")] * 8
@@ -201,6 +204,7 @@ for _ in range(t):
 
 print(min_cost_to_get_keys(t, offers))
 ```
+{% endcode %}
 
 Note that this code even works when the question introduces "D" - Just extend the slot into 4 digits binary, range to 16, dp\[15] max and we are good to go.
 

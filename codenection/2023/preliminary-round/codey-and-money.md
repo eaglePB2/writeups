@@ -1,7 +1,7 @@
 ---
+icon: money-bills-simple
 description: >-
   https://www.hackerrank.com/contests/codenection-2023-preliminary-round-closed-category/challenges/cn-c5
-icon: money-bills-simple
 ---
 
 # Codey and Money
@@ -147,6 +147,7 @@ Since the Requires is empty, the answer is YES.
 
 Here's the full code for the implementation:
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def compare_array_and_digits(array, digits):
     digits.reverse()
@@ -160,7 +161,6 @@ def compare_array_and_digits(array, digits):
                 array[i+1] += array[i] // 10
             except:
                 pass
-
     return "YES"
 
 t = int(input().strip())
@@ -171,6 +171,7 @@ for a0 in range(t):
     
     print(compare_array_and_digits(have, req))
 ```
+{% endcode %}
 
 Note that I used `try, except, pass` to override the index out of range error. This technic is useful when it comes to competitive programming, when you simply don't want to handle the array leakage.
 

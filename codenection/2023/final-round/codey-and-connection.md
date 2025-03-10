@@ -83,6 +83,7 @@ Otherwise, there's nothing special to say. connect the string, apply regex, then
 
 Here's the code:
 
+{% code lineNumbers="true" %}
 ```python
 import re
 
@@ -100,6 +101,7 @@ for _ in range(t):
     else:
         print("NO")
 ```
+{% endcode %}
 
 </details>
 
@@ -117,6 +119,7 @@ it will exit with "YES" if the counter is equal to length of the CODENECTION str
 
 Here's the solution, for manually looping through the text:
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def contains_codenection(words):
     target = "CODENECTION"
@@ -127,7 +130,6 @@ def contains_codenection(words):
             target_index += 1
         if target_index == len(target):
             return True
-
     return False
 
 t = int(input().strip())
@@ -140,5 +142,6 @@ for _ in range(t):
     else:
         print("NO")
 ```
+{% endcode %}
 
 </details>

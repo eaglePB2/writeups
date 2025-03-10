@@ -100,9 +100,9 @@ That's all for the maximum logic.
 
 Here's the code:
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 m, n = map(int, input().strip().split())
-
 row_values = list(map(int, input().strip().split()))
 col_values = list(map(int, input().strip().split()))
 
@@ -120,15 +120,12 @@ else:
         longer_array = col_values
         shorter_array = row_values
 
-min_value_in_longer = min(longer_array)
-
-min_sum = min_value_in_longer * len(shorter_array) + sum(shorter_array)
-
+min_sum = min(longer_array) * len(shorter_array) + sum(shorter_array)
 max_sum = sum(row_values) * n + sum(col_values) * m
 
 print(min_sum, max_sum)
-
 ```
+{% endcode %}
 
 Note starting from line 6, I added those if-else condition just to speed up the process and only check both arrays if the grid is square. Otherwise, starting from line 13 should be sufficient enough to pass the constraints.
 

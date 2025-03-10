@@ -1,7 +1,7 @@
 ---
+icon: book
 description: >-
   https://www.hackerrank.com/contests/codenection-2023-preliminary-round-closed-category/challenges/cn-c4
-icon: book
 ---
 
 # Codey and Textbooks
@@ -92,6 +92,7 @@ we know that d is always 1, so we can omit it. Substitute a to m, and we have th
 
 Here's the solution:
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 n, m, k = map(int, input().strip().split())
 ans = ((n * (n + 1) // 2) * m) - k
@@ -100,5 +101,6 @@ if ans <= 0:
 else:
     print(int(ans))
 ```
+{% endcode %}
 
 </details>

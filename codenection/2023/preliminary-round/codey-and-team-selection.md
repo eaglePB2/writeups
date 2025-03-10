@@ -1,7 +1,7 @@
 ---
+icon: people-arrows
 description: >-
   https://www.hackerrank.com/contests/codenection-2023-preliminary-round-closed-category/challenges/cn-c6
-icon: people-arrows
 ---
 
 # Codey and Team Selection
@@ -99,31 +99,21 @@ And not surprising, memorization works and passed all test cases!
 
 Here's my code:
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 t = int(input().strip())
 arr1 = list(map(int, input().strip().split()))
 arr2 = list(map(int, input().strip().split()))
 
 max_cache = 0
-
-arr1 = [x + (max_cache := max(max_cache, arr2[i])) for i, x in enumerate(arr1)]
-
-print(sum(arr1))
-```
-
-Kindly note that second arr1 line will likely get caught AI detection or cheating as it is not easy to do 1 line during the competition.
-
-Most of the time your code during competition is more like this:
-
-```python
-max_cache = 0
-
 total = 0
+
 for i, x in enumerate(arr1):
     max_cache = max(max_cache, arr2[i])
     total += x + max_cache
 
 print(total)
 ```
+{% endcode %}
 
 </details>

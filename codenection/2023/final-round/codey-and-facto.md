@@ -1,7 +1,7 @@
 ---
+icon: industry
 description: >-
   https://www.hackerrank.com/contests/codenection-2023-final-round-open-category/challenges/cn-c9
-icon: industry
 ---
 
 # Codey and Facto
@@ -94,6 +94,7 @@ Don't forget to MOD the answers owob!
 
 Here's my code solution:
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 import math
 
@@ -129,6 +130,7 @@ def fcm(m, n):
 m, n = map(int, input().strip().split())
 print(fcm(m, n))
 ```
+{% endcode %}
 
 Some people had proposed a recursive solution, but it will hit `recursive depth reached` error when n > 1000, so in this question, recursive method is not able to clear all test cases.
 

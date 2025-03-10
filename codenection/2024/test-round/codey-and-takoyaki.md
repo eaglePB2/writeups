@@ -1,6 +1,6 @@
 ---
-description: https://www.hackerrank.com/contests/codenection-2024-test/challenges/cn24-test
 icon: octopus-deploy
+description: https://www.hackerrank.com/contests/codenection-2024-test/challenges/cn24-test
 ---
 
 # Codey and Takoyaki
@@ -62,6 +62,7 @@ Therefore, we need to add a ceil function, which rounds up in any situation to c
 
 Here's my code below:
 
+{% code lineNumbers="true" %}
 ```python
 import math
 
@@ -70,6 +71,7 @@ total = sum(list(map(int, input().strip().split())))
 
 print(math.ceil(total / 9))
 ```
+{% endcode %}
 
 Note that I had used the math library, and that library is normally allowed on most of the competitive programming. For other programming languages, similar libraries can be found.
 

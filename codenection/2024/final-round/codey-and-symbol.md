@@ -1,7 +1,7 @@
 ---
+icon: symbols
 description: >-
   https://www.hackerrank.com/contests/codenection-2024-final-round-open-category/challenges/cn24-4/problem
-icon: symbols
 ---
 
 # Codey and Symbol
@@ -84,6 +84,7 @@ Therefore, when comparing, don't forget to round to 4 values or fewer, so that t
 
 Here's the code:
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 a, b, c, d, e, f = map(int, input().strip().split())
 lhs = a - (b / c)
@@ -96,5 +97,6 @@ elif round(rhs, 4) > round(lhs, 4):
 else:
     print("=")
 ```
+{% endcode %}
 
 </details>
