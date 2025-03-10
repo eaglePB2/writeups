@@ -1,7 +1,7 @@
 ---
+icon: bridge
 description: >-
   https://www.hackerrank.com/contests/codenection-2024-final-round-closed-category/challenges/cn24-14
-icon: bridge
 ---
 
 # Codey and Toy Kingdom 2
@@ -93,8 +93,6 @@ First, I will show the final code, which passed all the test cases:
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
-from collections import defaultdict
-
 class Graph:
     def __init__(self, n):
         self.n = n
@@ -155,8 +153,6 @@ If you are still there, well, let me explain the whole thing parts by parts. (si
 
 {% code overflow="wrap" %}
 ```python
-from collections import defaultdict
-
 class Graph:
     def __init__(self, n):
         self.n = n
