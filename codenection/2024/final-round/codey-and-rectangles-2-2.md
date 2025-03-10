@@ -76,7 +76,7 @@ This results in the following toy kingdom:
 
 <details>
 
-<summary>Solution - DSU, aka Don't attempt unless you have time, <strong>a lot of</strong> time.</summary>
+<summary>Solution - DSU, aka Don't Solve Unless you have time, <strong>a lot of</strong> time.</summary>
 
 If you have so much time, and nothing else to do, maybe you can try this one.\
 &#x20;(Spoiler: it's not worth it attempting this question during contest.)

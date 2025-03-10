@@ -1,7 +1,7 @@
 ---
+icon: clone
 description: >-
   https://www.hackerrank.com/contests/codenection-2024-final-round-closed-category/challenges/cn24-13
-icon: clone
 ---
 
 # Codey and Jutsu
@@ -105,7 +105,7 @@ print(sum(math.sqrt((x ** 2) + (y ** 2)) for x,y in zip(x_arr,y_arr)))
 ```
 {% endcode %}
 
-Note that in line 13, I use the one-liner to attempt the question. If you want breakdowns, there you go:
+Note that in line 13, I used the one-liner to attempt the question. If you want breakdowns, there you go:
 
 {% code title="Start from Line 13" lineNumbers="true" %}
 ```python
