@@ -1,5 +1,6 @@
 ---
 description: 'Difficulty: Medium/Hard'
+layout: editorial
 ---
 
 # Word Squares
