@@ -17,6 +17,7 @@
   * [Open Preliminary Round](codenection/2021/preliminary-round/README.md)
     * [f(Aibohphobia)^-1](codenection/2021/preliminary-round/aibohphobia.md)
     * [Did they cheat?](codenection/2021/preliminary-round/did-they-cheat.md)
+    * [Semester Breaks](codenection/2021/preliminary-round/aibohphobia-1.md)
   * [Open Final Round](codenection/2021/open-final-round/README.md)
     * [Ways 1](codenection/2021/open-final-round/ways-1.md)
     * [Circular Campus](codenection/2021/open-final-round/circular-campus.md)
